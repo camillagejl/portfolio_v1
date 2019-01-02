@@ -6,6 +6,7 @@ function showPage() {
     console.log('showPage');
     document.querySelector('.portfolio_item').addEventListener('click', showPortfolioPage);
     document.querySelector('.portfolio_overlay').addEventListener('click', hidePortfolioPage);
+    document.querySelector('.portfolio__exit').addEventListener('click', hidePortfolioPage);
 
     console.log('is touch:', is_touch_device());
 

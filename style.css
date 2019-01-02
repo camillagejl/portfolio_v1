@@ -14,15 +14,10 @@ body {
 
 html {
     font-family: var(--main-font);
+    background-image: linear-gradient(white, #dfdfdf);
+    background-size: contain;
+    background-attachment: fixed;
 
-}
-
-header {
-    display: inline-block;
-    text-align: left;
-    align-items: left;
-    width: 100%;
-    max-width: 1200px;
 }
 
 main {
@@ -37,6 +32,7 @@ hr {
 
 a {
     text-decoration: none;
+    color: var(--dark-grey)
 }
 
 h1 {
@@ -50,10 +46,60 @@ h2 {
     font-weight: var(--main-font-weight);
 }
 
+/*------- FRONT PAGE -------*/
+
+.frontpage_title {
+    font-size: 4rem;
+    line-height: 10vh;
+    font-family: var(--heading-font);
+    color: var(--dark-grey);
+}
+
+.frontpage {
+    margin: 40vh 0;
+}
+
+.frontpage__button {
+    font-family: var(--heading-font);
+    display: inline-block;
+    border: 1px solid var(--dark-grey);
+    padding: 7px;
+    margin: 10px;
+    text-transform: lowercase;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease-out;
+    box-shadow: 1px 1px 5px #b8b8b8;
+}
+
+.frontpage__button:hover {
+    background-color: grey;
+}
+
 /*------- HEADER -------*/
 
+header {
+    display: inline-block;
+    text-align: left;
+    align-items: left;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.header_line {
+    display: inline-block;
+    background-color: lightpink;
+    height: 5px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 100;
+}
+
 .page_heading {
-    margin: 80px 40px 40px 40px;
+    margin: 80px 0;
 }
 
 .page_title {
@@ -83,6 +129,7 @@ nav {
     text-transform: lowercase;
     font-size: 1.5em;
     transition: background-color 0.3s ease-out;
+    box-shadow: 1px 1px 5px #b8b8b8;
 }
 
 .nav_item:hover {
@@ -108,11 +155,12 @@ nav {
     flex-basis: 330px;
     max-width: 330px;
     margin: 10px;
-    border: var(--box-border);
+    /*border: var(--box-border);*/
+    box-shadow: 5px 5px 15px #919191;
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);*/
     font-size: 1.5em;
     line-height: 0;
     overflow: hidden;
-    /*background-color: #a99bff;*/
     cursor: pointer;
 }
 
@@ -215,6 +263,22 @@ nav {
     border: var(--box-border);
     overflow-y: scroll;
     overflow-x: hidden;
+}
+
+.portfolio__exit {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.portfolio__exit img {
+    width: 100%;
+    /*MAKE NEW CROSS*/
+    /*https://www.flaticon.com/free-icon/close_151882#term=cross&page=1&position=6*/
 }
 
 .portfolio__link a {
