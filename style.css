@@ -1,9 +1,25 @@
+/*Color palette inspiration
+https://refactoringui.com/previews/building-your-color-palette/?fbclid=IwAR0b7SnR-aIngxCNM6hNsux6grGKFsl-NT4LLGdRCCm_g7ZN7YGW9kfvG8g
+*/
+
 :root {
     --heading-font: 'Major Mono Display', monospace;
     --main-font: 'Montserrat', sans-serif;
     --main-font-weight: 200;
     --dark-grey: rgba(0, 0, 0, 0.75);
     --box-border: 3px solid #444444;
+    --main-colour-100: #FFD6E3;
+    --main-colour-200: #FFBDD2;
+    --main-colour-300: #FFA3C1;
+    --main-colour-400: #FF8AB0;
+    --main-colour-500: #FF719F;
+    --main-colour-600: #E3648D;
+    --main-colour-700: #C7587D;
+    --main-colour-800: #AC4C6B;
+    --main-colour-900: #8E3E58;
+    --main-colour-transparent: rgba(41, 14, 27, 0.8);
+    --main-background: #fbfbfb;
+    /*--main-colour-transparent: rgba(204, 83, 133, 0.9);*/
 }
 
 body {
@@ -14,20 +30,17 @@ body {
 
 html {
     font-family: var(--main-font);
-    background-image: linear-gradient(white, #dfdfdf);
+    background-image: linear-gradient(var(--main-background), #ffebef);
     background-size: contain;
     background-attachment: fixed;
-
+    background-repeat: no-repeat;
+    word-wrap: break-word;
 }
 
 main {
     display: inline-block;
     max-width: 1200px;
     position: relative;
-}
-
-hr {
-    border: 0.5px solid black;
 }
 
 a {
@@ -38,41 +51,57 @@ a {
 h1 {
     font-size: 3rem;
     font-weight: var(--main-font-weight);
-    margin: 20px;
+    margin: 30px;
+    font-family: var(--heading-font);
+    text-transform: lowercase;
+    color: var(--main-colour-800);
 }
 
 h2 {
     font-size: 2rem;
     font-weight: var(--main-font-weight);
+    color: var(--main-colour-800);
+    margin-bottom: 15px;
+}
+
+p {
+    line-height: 1.5rem;
 }
 
 /*------- FRONT PAGE -------*/
 
 .frontpage_title {
     font-size: 4rem;
-    line-height: 10vh;
+    line-height: 4rem;
     font-family: var(--heading-font);
     color: var(--dark-grey);
+    margin-bottom: 50px;
+}
+
+.frontpage_title:first-child {
+    margin-bottom: 0;
 }
 
 .frontpage {
-    margin: 40vh 0;
+    margin-top: 40vh;
+    height: 60vh;
+    width: 100vw;
 }
 
 .frontpage__button {
     font-family: var(--heading-font);
+    text-transform: lowercase;
     display: inline-block;
     border: 1px solid var(--dark-grey);
     padding: 7px;
     margin: 10px;
-    text-transform: lowercase;
     font-size: 1.5rem;
     transition: background-color 0.3s ease-out;
     box-shadow: 1px 1px 5px #b8b8b8;
 }
 
 .frontpage__button:hover {
-    background-color: grey;
+    background-color: var(--main-colour-700);
 }
 
 /*------- HEADER -------*/
@@ -87,7 +116,7 @@ header {
 
 .header_line {
     display: inline-block;
-    background-color: lightpink;
+    background-color: var(--main-colour-300);
     height: 5px;
     width: 100%;
     position: fixed;
@@ -99,31 +128,32 @@ header {
 }
 
 .page_heading {
-    margin: 80px 0;
+    margin: 90px 80px 40px 0;
 }
 
-.page_title {
-    font-size: 3em;
+.page_title a {
+    font-size: 3rem;
     font-family: var(--heading-font);
-    line-height: 80px;
+    line-height: 3rem;
     color: var(--dark-grey);
 }
 
 .page_title_bottom {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--dark-grey);
     max-width: 420px;
     height: 0;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 nav {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .nav_item {
     font-family: var(--heading-font);
     display: inline-block;
-    border: 1px solid var(--dark-grey);
+    border: 1px solid var(--main-colour-300);
     padding: 7px;
     margin: 10px;
     text-transform: lowercase;
@@ -133,9 +163,19 @@ nav {
 }
 
 .nav_item:hover {
-    background-color: grey;
+    background-color: var(--main-colour-700);
 }
 
+/*-------- FOOTER --------*/
+
+footer {
+    margin: 20px 0;
+    color: var(--dark-grey)
+}
+
+footer a {
+    text-decoration: underline;
+}
 
 /*-------- MAIN --------*/
 
@@ -152,9 +192,9 @@ nav {
     position: relative;
     font-family: var(--heading-font);
     flex: 1;
-    flex-basis: 330px;
-    max-width: 330px;
-    margin: 10px;
+    flex-basis: 360px;
+    max-width: 360px;
+    margin: 13px;
     /*border: var(--box-border);*/
     box-shadow: 5px 5px 15px #919191;
     /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);*/
@@ -169,41 +209,29 @@ nav {
     opacity: 0.95;
 }
 
-.is_not_touch_device .portfolio_item__details {
+.portfolio_item__details {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background: var(--dark-grey);
-    margin-top: 290px;
+    background: var(--main-colour-transparent);
     color: white;
     transition: all 0.3s ease-out;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.is_not_touch_device .portfolio_item__details {
+    margin-top: 315px;
 }
 
 .is_not_touch_device .portfolio_item:hover .portfolio_item__details {
         margin-top: 0;
-        height: 80%;
-        padding: 10% 0;
+        height: 60%;
+        padding: 20% 0;
     }
-
-.is_touch_device .portfolio_item__details {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: var(--dark-grey);
-    margin-top: 180px;
-    color: white;
-    transition: all 0.3s ease-out;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 
 .portfolio_item__title {
     font-family: var(--heading-font);
@@ -216,21 +244,48 @@ nav {
     font-family: var(--main-font);
     font-size: 1.5rem;
     line-height: 30px;
-    margin-top: 50px;
     font-weight: var(--main-font-weight);
+    margin: 0 5px;
 }
 
 .portfolio_item__button {
     font-family: var(--main-font);
-    background-color: black;
+    background-color: var(--main-colour-transparent);
     color: white;
     padding: 20px;
     border: none;
     font-size: 1.5rem;
-    margin-top: 50px;
+    margin: 50px 0;
     font-weight: var(--main-font-weight);
 }
 
+
+/*-------- PORTFOLIO THUMBS FOR TOUCH --------*/
+
+.is_touch_device .portfolio_item__details {
+    margin-top: 260px;
+}
+
+.is_touch_device .portfolio_item__title {
+    font-family: var(--heading-font);
+    text-transform: lowercase;
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.is_touch_device .portfolio_item__button {
+    font-family: var(--main-font);
+    background-color: var(--main-colour-transparent);
+    color: white;
+    padding: 20px;
+    border: none;
+    font-size: 1.5rem;
+    margin: 5px 0 50px 0;
+}
+
+.is_touch_device .portfolio_item__p {
+    display: none;
+}
 
 /*-------- PORTFOLIO PAGES --------*/
 
@@ -256,13 +311,14 @@ nav {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: auto;
-    margin-top: 17vh;
-    max-width: 900px;
-    height: 70vh;
-    background-color: white;
-    border: var(--box-border);
+    margin-top: 10vh;
+    max-width: 1050px;
+    height: 80vh;
+    background-color: var(--main-background);
+    border: 3px solid var(--main-colour-200);
     overflow-y: scroll;
     overflow-x: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
 }
 
 .portfolio__exit {
@@ -289,25 +345,131 @@ nav {
 
 .portfolio__content {
     display: flex;
-    max-width: 800px;
+    max-width: 950px;
     margin: 0 50px;
     flex-wrap: wrap;
 }
 
 .portfolio__images {
-    flex-basis: 250px;
+    width: 400px;
+    flex-basis: 400px;
     flex-grow: 1;
 }
 
 .portfolio__images img {
     width: 100%;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+}
+
+.split_images {
+    display: flex;
+    justify-content: space-between;
+}
+
+.split_images img {
+    width: 49%;
+    height: 100%;
 }
 
 .portfolio__text {
     text-align: left;
     display: inline-block;
     flex-grow: 1;
-    flex-basis: 420px;
+    width: 550px;
+    flex-basis: 450px;
+    margin-right: 25px;
+}
+
+
+/*-------- MEDIAQUERIES --------*/
+
+@media only screen and (max-width: 1250px) {
+    .page_heading {
+        margin: 40px 25px 40px 25px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .portfolio_preview {
+        margin: 4vh;
+        height: 83vh;
+    }
+
+    .portfolio__content {
+        margin: 0 20px;
+    }
+
+    .portfolio__exit {
+        top: 10px;
+        right: 10px;
+        height: 15px;
+        width: 15px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .portfolio__text {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 853px) {
+    .frontpage_title {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+}
+
+@media only screen and (max-width: 643px) {
+    .frontpage {
+        margin-top: 30vh;
+    }
+
+    .frontpage_title {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    .frontpage__button {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .frontpage_title {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .page_title a {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .is_touch_device .portfolio_item__details {
+        margin-top: 235px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .is_touch_device .portfolio_item__details {
+        margin-top: 200px;
+    }
 }
 
 /*-------- HELPERS --------*/
@@ -319,4 +481,13 @@ nav {
 .hide_overflow {
     position: fixed;
     overflow-y: scroll;
+}
+
+
+/*-------- UNSORTED --------*/
+
+.title_bottom {
+    border-bottom: 2px solid var(--main-colour-200);
+    width: 60%;
+    height: 0;
 }
