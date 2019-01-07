@@ -57,7 +57,7 @@ function is_touch_device() {
 // Portfolio
 
 function showPortfolioPages() {
-    console.log('showPortfolioPages');
+    console.log('showPortfolioPagesNow');
     document.querySelector('.portfolio_pages').classList.remove('hidden');
     document.querySelector('html').classList.add('hide_overflow');
 
@@ -104,6 +104,7 @@ function showSweetDreams() {
 }
 
 function showIngolfs() {
+    console.log('showIngolfs');
     showPortfolioPages();
     document.querySelector('#ingolfs').classList.remove('hidden');
 }
@@ -114,6 +115,7 @@ function showInterview() {
 }
 
 function showStilartsite() {
+    console.log('showStilartsite');
     showPortfolioPages();
     document.querySelector('#stilartsite').classList.remove('hidden');
 }
