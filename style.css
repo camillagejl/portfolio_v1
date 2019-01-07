@@ -74,6 +74,11 @@ p {
     line-height: 1.5rem;
 }
 
+.lone_link {
+    text-decoration: underline;
+    color: var(--main-colour-800);
+}
+
 /*------- FRONT PAGE -------*/
 
 .frontpage_title {
@@ -179,9 +184,6 @@ footer {
     color: var(--dark-grey)
 }
 
-footer a {
-    text-decoration: underline;
-}
 
 /*-------- MAIN --------*/
 
@@ -191,6 +193,40 @@ footer a {
     flex-wrap: wrap;
     justify-content: center;
 }
+
+
+/*-------- ABOUT --------*/
+
+.about_item {
+    position: relative;
+    font-family: var(--heading-font);
+    flex: 1;
+    flex-basis: 360px;
+    max-width: 360px;
+    margin: 13px;
+    box-shadow: 5px 5px 15px #919191;
+    font-size: 1.5em;
+    background-color: rgba(253, 253, 253, 0.50);
+}
+
+.about__title {
+    text-transform: lowercase;
+    margin: 20px 0;
+}
+
+.about_item img {
+    width: 100%;
+    opacity: 0.95;
+}
+
+.about__text {
+    font-size: 1rem;
+    font-family: var(--main-font);
+    margin: 0 15px 20px 15px;
+    text-align: left;
+    line-height: 1.5rem;
+}
+
 
 /*-------- PORTFOLIO THUMBS --------*/
 

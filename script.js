@@ -57,13 +57,14 @@ function is_touch_device() {
 // Portfolio
 
 function showPortfolioPages() {
-    console.log('showPortfolioPagesNow');
+    console.log('showPortfolioPages');
     document.querySelector('.portfolio_pages').classList.remove('hidden');
     document.querySelector('html').classList.add('hide_overflow');
 
 }
 
 function hidePortfolioPages() {
+    console.log('hidePortfolioPages');
     document.querySelector('.portfolio_pages').classList.add('hidden');
     document.querySelector('html').classList.remove('hide_overflow');
 
@@ -79,26 +80,31 @@ function hidePortfolioPages() {
 
 
 function showPortfolioV1() {
+    console.log('showPortfolioV1');
     showPortfolioPages();
     document.querySelector('#portfolio_v1').classList.remove('hidden');
 }
 
 function showKeaKoen() {
+    console.log('showKeaKoen');
     showPortfolioPages();
     document.querySelector('#keakoen').classList.remove('hidden');
 }
 
 function showFronter() {
+    console.log('showFronter');
     showPortfolioPages();
     document.querySelector('#fronter').classList.remove('hidden');
 }
 
 function showSkalViSnakke() {
+    console.log('showSkalViSnakke');
     showPortfolioPages();
     document.querySelector('#skal_vi_snakke').classList.remove('hidden');
 }
 
 function showSweetDreams() {
+    console.log('showSweetDreams');
     showPortfolioPages();
     document.querySelector('#sweet_dreams').classList.remove('hidden');
 }
@@ -110,6 +116,7 @@ function showIngolfs() {
 }
 
 function showInterview() {
+    console.log('showInterview');
     showPortfolioPages();
     document.querySelector('#interview').classList.remove('hidden');
 }
