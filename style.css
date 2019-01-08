@@ -79,6 +79,10 @@ p {
     color: var(--main-colour-800);
 }
 
+.lone_link:hover {
+    color: var(--main-colour-600);
+}
+
 /*------- FRONT PAGE -------*/
 
 .frontpage_title {
@@ -365,12 +369,22 @@ footer {
 
 .portfolio__exit {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 25px;
+    right: 25px;
     height: 20px;
     width: 20px;
     cursor: pointer;
-    padding: 5px;
+    background-image: url("elements/exit.png");
+    background-size: contain;
+    transition: 0.2s;
+}
+
+.portfolio__exit:hover {
+    top: 23px;
+    right: 23px;
+    height: 24px;
+    width: 24px;
+    background-image: url("elements/exit_hover.png");
 }
 
 .portfolio__exit img {
@@ -530,6 +544,5 @@ footer {
 }
 
 .hide_overflow {
-    position: fixed;
-    overflow-y: scroll;
+    overflow: hidden;
 }

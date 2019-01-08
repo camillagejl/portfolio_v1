@@ -65,17 +65,16 @@ function showPortfolioPages() {
 
 function hidePortfolioPages() {
     console.log('hidePortfolioPages');
+
+    [...document.querySelectorAll('.portfolio_preview')].forEach(function (page) {
+        page.scrollTop = 0;
+        page.classList.add('hidden');
+    });
+
     document.querySelector('.portfolio_pages').classList.add('hidden');
     document.querySelector('html').classList.remove('hide_overflow');
 
-    document.querySelector('#portfolio_v1').classList.add('hidden');
-    document.querySelector('#keakoen').classList.add('hidden');
-    document.querySelector('#fronter').classList.add('hidden');
-    document.querySelector('#skal_vi_snakke').classList.add('hidden');
-    document.querySelector('#sweet_dreams').classList.add('hidden');
-    document.querySelector('#ingolfs').classList.add('hidden');
-    document.querySelector('#interview').classList.add('hidden');
-    document.querySelector('#stilartsite').classList.add('hidden');
+
 }
 
 
