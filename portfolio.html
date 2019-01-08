@@ -761,24 +761,40 @@
                         </p>
                         <br>
                         <h2>
-                            Hvem, hvad, hvor, hvorfor?
+                            Beskrivelse af projektet
                         </h2>
                         <div class="title_bottom"></div>
                         <p>
-                            Spillet er lavet som et projekt på uddannelsen. Igennem det 3-ugers forløb lavede vi løbende
-                            opgaver, afleveringer og fulgte tutorials, hvilket alt sammen kulminerede i det færdige
-                            spil.
+                            Dette projekt gik ud på at re-designe en eksisterende hjemmeside, som kunne trænge til en
+                            kærlig hånd. Dette indebar både en totalt re-design af hjemmesiden, men også produktion af
+                            indhold til siden, i form af en præsentationsvideo og billeder.
                         </p>
                         <p>
-                            Der var kun få krav til spillet, men de basale fokuspunkter var sammenhæng i designet,
-                            funktionalitet og responsivitet.
+                            Til præsentationsvideoen valgte vi at interviewe kro-mutteren, som fortæller om, hvorfor
+                            Ingolfs Kaffebar er noget særligt, samt historien om kaffebaren.
+                            (<a class="lone_link" href="https://camillagejl.com/kea/02-content/02-redesign/02_02_05_dokumentationssite/video.html">Se interviewguide og storyboard</a>)
+                            Derudover har vi lagt B-rolls ind over som viser stemningen på stedet, samt flere af de
+                            specielle aspekter af kaffebaren, såsom cirkus-temaet og fotografierne, som kro-mutteren
+                            fortæller om i interviewet.
+                        </p>
+                        <p>
+                            Personligt har jeg stået for at redigere mange af billederne samt designe- og kode det meste
+                            af hjemmesiden. Det meste af hjemmesiden er lavet med flexboxe, samt enkelte mediaqueries
+                            til at få billeder og marginer til at opføre sig, som de skal.
                         </p>
                     </div>
                     <div class="portfolio__images">
                         <img src="elements/ingolfs_1.jpg">
                         <img src="elements/ingolfs_4.jpg">
                         <img src="elements/ingolfs_5.jpg">
-                        <img src="elements/ingolfs_2.jpg">
+                        <div class="split_images">
+                            <img src="elements/ingolfs_8.png">
+                            <img src="elements/ingolfs_9.png">
+                        </div>
+                        <div class="split_images">
+                            <img src="elements/ingolfs_6.jpg">
+                            <img src="elements/ingolfs_7.jpg">
+                        </div>
                         <div class="split_images">
                             <img src="elements/ingolfs_mobile_1.jpg">
                             <img src="elements/ingolfs_mobile_2.jpg">
@@ -788,51 +804,117 @@
                 <div class="portfolio__section">
                     <div class="portfolio__text">
                         <h2>
-                            Hvordan?
+                            Det eksisterende website
                         </h2>
                         <div class="title_bottom"></div>
                         <p>
-                            Som base for design-processen har jeg lavet et <strong>moodboard</strong> og
-                            <strong>styletile</strong>, som viser farver og fonte som jeg ville bruge på sitet. Med
-                            dette som udgangspunkt har jeg sat hele hjemmesiden op i <strong>Adobe InDesign</strong>.
+                            Som første skridt i projektet lavede vi tests af den eksisterende hjemmeside til Ingolfs
+                            Kaffebar (første screenshot til højre).
                         </p>
                         <p>
-                            Til at kode hjemmesiden havde vi på forhånd fået udleveret et <strong>wireframe</strong>,
-                            som vi skulle følge. Med dette som udgangspunkt er hjemmesiden opbygget med
-                            <strong>flexboxe</strong>, som har gjort det nemt at gøre sitet <strong>responsivt</strong>.
+                            Ved 5-sekunders-test viste vi forsiden til 4 forskellige personer, og kun 2 af disse
+                            fangede, at det handlede om en kaffebar. Generelt var reaktionerne i retningen af det
+                            negative, da alle syntes, at hjemmesiden var for prangende og forvirrende.
+                        </p>
+                        <p>
+                            Via vores BERT-test svarede testpersonerne ligeledes, at hjemmesiden ser uprofessionel ud
+                            at det ligner lav kvalitet, samt at man ikke helt opdager, at det handler om en kaffebar.
+                        </p>
+                        <p>
+                            På baggrund af disse tests ville vi gerne lave en mere simpel og overskuelig hjemmeside,
+                            som tydeligt viser, hvad Ingolfs Kaffebar er, og som ikke skræmmer folk væk ved, at de
+                            synes, at kvaliteten ser ud til at være lav.
+                        </p>
+                    </div>
+                    <div class="portfolio__images">
+                        <img src="elements/ingolfs_original.jpg">
+                        <div class="split_images">
+                            <img src="elements/ingolfs_process_1.jpg">
+                            <img src="elements/ingolfs_process_2.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__section">
+                    <div class="portfolio__text">
+                        <h2>
+                            Processen for vores re-design
+                        </h2>
+                        <div class="title_bottom"></div>
+                        <p>
+                            Før vi tog ud og filmede på location lavede vi en produktionsplan for billederne, samt et
+                            storyboard og interviewguide for videoen. Da vi kom derud brugte vi god tid på at se
+                            kaffebaren an og fange stemningen, og fik taget mange billeder og B-rolls så vi havde nok at
+                            vælge imellem.
+                        </p>
+                        <p>
+                            Under interviewet med kro-mutteren spurgte vi ind til, hvad hun godt kunne tænke sig ved
+                            vores re-design. Her svarede hun, at hun godt kunne lide det nuværende design fordi det er
+                            lidt vildt og skaber opmærksomhed, men at hun gerne ville have mere fokus på mad, da stedet
+                            faktisk mere er en restaurant end en kaffebar, hvilket ikke fremgår tydeligt af den
+                            nuværende hjemmeisde - eller af navnet. Disse to ting har vi begge taget med i vores
+                            overvejelser, og har hermed holdt fast i det lyserøde design for, at siden skiller sig ud,
+                            samt inddraget mange lækre madbilleder, bl.a. som det første man ser, når man kommer ind på
+                            hjemmesiden.
+                        </p>
+                        <p>
+                            Hos Ingolfs Kaffebar kører de lidt af et cirkus-tema med bl.a. cirkus-heste og -artister.
+                            For at føre denne stil med på hjemmesiden har vi valgt at lave en grynet, lyserød fotostil,
+                            som vi syntes fungerer godt med temaet, og de fleste billeder er dermed redigeret i denne
+                            stil.
+                        </p>
+                        <p>
+                            Før vi begyndte at kode selve hjemmesiden lavede vi wireframes og layoutdiagram for siden,
+                            så alle i gruppe var enige om- og med på, hvordan vi ville stille det hele op.
+                            Tekstindholdet har vi kopieret fra den nuværende side.
+                        </p>
+                    </div>
+                    <div class="portfolio__images">
+                        <div class="split_images">
+                            <img src="elements/ingolfs_process_11.jpg">
+                            <img src="elements/ingolfs_process_12.jpg">
+                        </div>
+                        <img src="elements/ingolfs_process_7.jpg">
+                        <div class="split_images">
+                            <img src="elements/ingolfs_process_8.jpg">
+                            <img src="elements/ingolfs_process_9.jpg">
+                        </div>
+                        <div class="split_images">
+                            <img src="elements/ingolfs_process_5.jpg">
+                            <img src="elements/ingolfs_process_6.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__section">
+                    <div class="portfolio__text">
+                        <h2>
+                            Test af det nye site
+                        </h2>
+                        <div class="title_bottom"></div>
+                        <p>
+                            Da vi var færdige med det endelige site testede vi på samme måde, som vi havde testet det
+                            originale site. I vores 5-sekunders-test var det mest iøjefaldende for testpersonerne maden,
+                            hvilket er præcis som kro-mutter gerne ville have det. Derudover blev "musik" også nævnt,
+                            hvilket det ikke gjorde i vores første test. Der er altså kommet mere fokus på, hvad
+                            Ingolfs Kaffebar egentlig er.
+                        </p>
+                        <p>
+                            Derudover viser BERT-testen også, at testpersonerne overvejende finder vores nye hjemmeside
+                            mere professionel.
                         </p>
                         <p>
                             <strong>
                                 Keywords:
                             </strong>
-                            Illustrator | HTML | CSS | JavaScript
+                            Photoshop | Premiere Pro | HTML | CSS
                         </p>
                     </div>
                     <div class="portfolio__images">
                         <div class="split_images">
-                            <img src="elements/sweet_dreams_state_machine.jpg">
-                            <img src="elements/sweet_dreams_activity_diagram.jpg">
+                            <img src="elements/ingolfs_process_3.jpg">
+                            <img src="elements/ingolfs_process_4.jpg">
                         </div>
-                        <div class="split_images">
-                            <img src="elements/sweet_dreams_sketch_1.jpg">
-                            <img src="elements/sweet_dreams_sketch_2.jpg">
-                        </div>
-                        <div class="split_images">
-                            <img src="elements/sweet_dreams_sketch_3.jpg">
-                            <img src="elements/sweet_dreams_sketch_4.jpg">
-                        </div>
-                        <div class="split_images">
-                            <img src="elements/sweet_dreams_process_1.jpg">
-                            <img src="elements/sweet_dreams_process_2.jpg">
-                        </div>
-                        <div class="split_images">
-                            <img src="elements/sweet_dreams_process_3.jpg">
-                            <img src="elements/sweet_dreams_process_4.jpg">
-                        </div>
-                        <img src="elements/sweet_dreams_process_5.jpg">
                     </div>
                 </div>
-            </div>
         </div>
         <div id="interview" class="portfolio_preview hidden">
             <div class="portfolio__exit">
