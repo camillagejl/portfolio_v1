@@ -374,10 +374,7 @@ footer {
 }
 
 .portfolio__exit img {
-    width: 100%;
-    /*MAKE NEW CROSS*/
-    /*https://www.flaticon.com/free-icon/close_151882#term=cross&page=1&position=6*/
-}
+    width: 100%;}
 
 .portfolio__link a {
     color: black;
