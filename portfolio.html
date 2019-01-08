@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="EN" class="is_not_touch_device">
+<html lang="DA" class="is_not_touch_device">
 
 <head>
     <link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
@@ -662,13 +662,14 @@
                         </p>
                         <br>
                         <h2>
-                            Hvem, hvad, hvor, hvorfor?
+                            Beskrivelse af projektet
                         </h2>
                         <div class="title_bottom"></div>
                         <p>
-                            Spillet er lavet som et projekt på uddannelsen. Igennem det 3-ugers forløb lavede vi løbende
-                            opgaver, afleveringer og fulgte tutorials, hvilket alt sammen kulminerede i det færdige
-                            spil.
+                            Dette projekt var spredt over tre uger, hvor vi løbende fik forskellige opgaver som i sidste
+                            ende skulle lede til at simpelt, browser-baseret spil. Kravene for dette spil indebar at
+                            lave al grafikken som vector i illustrator, lave fungerende point-system og timer, samt
+                            indsætte lyd- og musik og lave funktioner til at slå dette fra.
                         </p>
                         <p>
                             Der var kun få krav til spillet, men de basale fokuspunkter var sammenhæng i designet,
@@ -689,14 +690,47 @@
                         </h2>
                         <div class="title_bottom"></div>
                         <p>
-                            Som base for design-processen har jeg lavet et <strong>moodboard</strong> og
-                            <strong>styletile</strong>, som viser farver og fonte som jeg ville bruge på sitet. Med
-                            dette som udgangspunkt har jeg sat hele hjemmesiden op i <strong>Adobe InDesign</strong>.
+                            Før jeg begyndte på spillet lavede jeg nogle detaljerede skitser, så jeg havde noget at gå
+                            ud fra. Sideløbende lavede jeg et aktivitetsdiagram, som jeg brugte til at specificere
+                            spil-idéen, til jeg følte mig klar til at begynde på selve elementerne til spillet.
                         </p>
                         <p>
-                            Til at kode hjemmesiden havde vi på forhånd fået udleveret et <strong>wireframe</strong>,
-                            som vi skulle følge. Med dette som udgangspunkt er hjemmesiden opbygget med
-                            <strong>flexboxe</strong>, som har gjort det nemt at gøre sitet <strong>responsivt</strong>.
+                            Al grafik er lavet fra bunden i Illustrator og eksporteret som SVG-filer. Jeg har valgt at
+                            lave meget bløde former og rolige farver, da jeg gerne ville have det til at være et
+                            "hyggeligt" spil, og vise en stille, natlig stemning. Fonterne er ligeledes afrundede
+                            sans-serif fonter som understøtter stilen.
+                        </p>
+                        <p>
+                            For at skabe en sammenhæng mellem den blå menu-skærm og den lilla spil-skærm har jeg
+                            udnyttet vinduet på huset, hvor man kan se den "modsatte" farve igennem (det lille tapet i
+                            menuen, og den blå himmel i spillet). Ligeledes har jeg valgt at placere en lampe tydeligt
+                            foran vinduet for at skabe en fornemmelse af sammenhæng mellem de to rum.
+                        </p>
+                        <p>
+                            "Karaktererne" (elefanten, guleroden, solen, slikkepinden og musen) har jeg givet et
+                            manga-agtigt udtryk for at understøtte den bløde og "nuttede" stil. Alle karaktererne har
+                            de samme slags store øjne, men dog har musen ikke fået den glade mund eller de lyserøde
+                            kinder, for at vise, at denne er "dårlig" i modsætning til de andre.
+                        </p>
+                        <p>
+                            Selve funktionaliteten i spillet er kodet i HTML, CSS og javaScript. Al positionering og
+                            animation er lavet i CSS, og jeg har så brugt javaScript til at gøre det funktionelt med
+                            eventListeners, tilføje og fjerne klasser, shuffle drømmene, tælle point og tælle ned i
+                            tiden.
+                        </p>
+                        <p>
+                            Hver gang man trykker på en drøm, bliver drømmene shufflet og der dukker nye op. Der vil
+                            altid være én mus og to gode drømme. Trykker man på en god drøm, får man et point og der
+                            bliver vist nye drømme med det samme. Trykker man på en dårlig drøm (en mus) mister man et
+                            "liv", og den viser 3 mus, som man ikke kan klikke på, i to sekunder, før der dukker nye
+                            drømme op. Sidstnævnte har jeg valgt at gøre, for at man får to sekunders tidsstraf ved at
+                            trykke "forkert", så dette vil påvirke ens endelige pointresultat, hvis man klarer den
+                            igennem natten.
+                        </p>
+                        <p>
+                            Før jeg begyndte kodningen oprettede jeg et state machine diagram, som jeg sideløbende har
+                            arbejdet videre på, efterhånden som jeg fandt ud af, hvor meget tid man skulle have, hvad
+                            der præcist skulle ske når man trykkede hvor osv.
                         </p>
                         <p>
                             <strong>
@@ -706,10 +740,6 @@
                         </p>
                     </div>
                     <div class="portfolio__images">
-                        <div class="split_images">
-                            <img src="elements/sweet_dreams_state_machine.jpg">
-                            <img src="elements/sweet_dreams_activity_diagram.jpg">
-                        </div>
                         <div class="split_images">
                             <img src="elements/sweet_dreams_sketch_1.jpg">
                             <img src="elements/sweet_dreams_sketch_2.jpg">
@@ -727,6 +757,10 @@
                             <img src="elements/sweet_dreams_process_4.jpg">
                         </div>
                         <img src="elements/sweet_dreams_process_5.jpg">
+                        <div class="split_images">
+                            <img src="elements/sweet_dreams_state_machine.jpg">
+                            <img src="elements/sweet_dreams_activity_diagram.jpg">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -915,6 +949,7 @@
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
         <div id="interview" class="portfolio_preview hidden">
             <div class="portfolio__exit">
