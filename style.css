@@ -385,6 +385,12 @@ footer {
     margin-top: 0;
 }
 
+.title_bottom {
+    border-bottom: 2px solid var(--main-colour-200);
+    width: 60%;
+    height: 0;
+}
+
 .portfolio__content {
     display: flex;
     max-width: 950px;
@@ -530,23 +536,3 @@ footer {
     position: fixed;
     overflow-y: scroll;
 }
-
-
-/*-------- UNSORTED --------*/
-
-.title_bottom {
-    border-bottom: 2px solid var(--main-colour-200);
-    width: 60%;
-    height: 0;
-}
-
-
-
-.giant {
-    font-family: var(--heading-font);
-    font-size: 59rem;
-}
-
-/*.white {*/
-    /*background-color: white;*/
-/*}*/
